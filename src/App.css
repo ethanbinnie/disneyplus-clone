@@ -1,38 +1,317 @@
+
 .App {
-  text-align: center;
+    font-family: Avenir-World-for-Disney-Demi,sans-serif;
+    background-color: #15151e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #f9f9f9;
+    height: 70px;
+    background-color: #0a0a0f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerLogo {
+    padding-top: 16px;
+    margin-left: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerSections {
+    display: flex;
+    gap: 37px;
+    padding-right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.headerGenres {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 540;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerIcon {
+    fill: #f9f9f9;
+    padding-top: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+.headerPerson {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.headerProfile {
+    display: flex;
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeHeaderImgFlex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.homeHeaderImg {
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0px 10px 10px black;
+}
+
+h3 {
+    margin-right: auto;
+    padding-left: 70px;
+    padding-top: 18px;
+    color: #f9f9f9;
+}
+
+.brand {
+    color: #f9f9f9;
+    border: 1px solid #1f1f2e;
+    border-radius: 5px;
+    height: 100px;
+    background-color: #1f1f2e;
+    box-shadow: 0px 10px 10px black;
+}
+
+.brandImg {
+    width: 200px;
+}
+
+.homeBrand {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.normal {
+    box-shadow: 0px 10px 10px black;
+    height: 136px;
+}
+
+.normalImg {
+    width: 245px;
+    border-radius: 5px;
+}
+
+.homeNormal {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.star {
+    box-shadow: 0px 10px 10px black;
+    height: 345px;
+}
+
+.starImg {
+    width: 245px;
+    border-radius: 5px;
+}
+
+.homeStar {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.searchbar {
+    width: 100%;
+    height: 97px;
+    background-image: linear-gradient(rgb(70, 74, 90), rgb(101, 105, 119));
+    font-size: 50px;
+    padding-left: 70px;
+    color: #f9f9f9;
+    border-color: 0;
+}
+
+::placeholder {
+    color: #f9f9f9;
+    opacity: 1;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.searchText {
+    color: #f9f9f9;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 36px;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+
+.collection {
+    height: 117px;
+    width: 300px;
+}
+
+.collectionImg {
+    border-radius: 5px;
+    width: 310px;
+    box-shadow: 0px 10px 10px black;
+}
+
+.searchCollection {
+    display: grid;
+    row-gap: 80px;
+    column-gap: 20px;
+    width: 1300px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 65em) {
+    .searchCollection {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.watchlist {
+    height: 57vh;
+}
+
+.watchlistVideos {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    padding-left: 70px;
+}
+
+.watchlistText {
+    color: #f9f9f9;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+
+.watchlistHeader {
+    padding-top: 20px;
+    padding-left: 70px;
+    font-size: 45px;
+    color: #f9f9f9;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 150px;
+    background-color: #0a0a0f;
+    margin-top: 50px;
+}
+
+.footerImg {
+    width: 120px;
+    height: 40px;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #f9f9f9;
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+
+.originals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.originalsNormal {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.originalsHeader {
+    letter-spacing: 15px;
+    color: #f9f9f9;
+    font-size: 45px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.originalsText {
+    color: #f9f9f9;
+    font-size: 20px;
+    padding-left: 70px;
+    font-weight: 550;
+}
+
+.moviesText {
+    padding-left: 70px;
+    font-size: 45px;
+    color: #f9f9f9;
+}
+
+.moviesVideos {
+    display: grid;
+    row-gap: 80px;
+    column-gap: 20px;
+    width: 1300px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 65em) {
+    .moviesVideos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(50, 50, 61);
+    color: lightgray;
+    height: 30px;
+    padding-bottom: 3px;
+    padding-inline: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.seriesVideos {
+    display: grid;
+    row-gap: 80px;
+    column-gap: 20px;
+    width: 1300px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 65em) {
+    .seriesVideos {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
