@@ -34,6 +34,14 @@
     letter-spacing: 1px;
 }
 
+p {
+    color: #f9f9f9;
+}
+
+.link {
+    color: #0a0a0f;
+}
+
 .headerIcon {
     fill: #f9f9f9;
     padding-top: 5px;
