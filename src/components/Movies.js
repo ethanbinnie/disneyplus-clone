@@ -4,7 +4,7 @@ import Collection from "./Collectionvid"
 
 export default function Movies() {
     return (
-        <div>
+        <div className="movies">
             <div className="textContainer">
                 <h1 className="moviesText">Movies</h1>
                 <div className="featured">

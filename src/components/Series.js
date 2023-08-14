@@ -3,7 +3,7 @@ import Collection from "./Collectionvid";
 
 export default function Series() {
   return (
-    <div>
+    <div className="series">
       <div>
         <div className="textContainer">
           <h1 className="moviesText">Series</h1>

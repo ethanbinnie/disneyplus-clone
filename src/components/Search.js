@@ -2,7 +2,7 @@ import Collection from "./Collectionvid"
 
 export default function Search() {
     return (
-        <div>
+        <div className="search">
             <input type="text" placeholder="Search by title, character, or genre" className="searchbar"/>
             <h1 className="searchText">Explore</h1>
             <div className="searchCollection">

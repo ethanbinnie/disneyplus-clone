@@ -11,6 +11,8 @@
     color: #f9f9f9;
     height: 70px;
     background-color: #0a0a0f;
+    position: fixed;
+    width: 100%;
 }
 
 .headerLogo {
@@ -68,6 +70,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 69px;
 }
 
 .homeHeaderImgFlex {
@@ -94,8 +97,9 @@ h3 {
     border: 1px solid #1f1f2e;
     border-radius: 5px;
     height: 100px;
-    background-color: #1f1f2e;
+    background-color: #272734;
     box-shadow: 0px 10px 10px black;
+    padding-bottom: 10px;
 }
 
 .brandImg {
@@ -140,8 +144,12 @@ h3 {
     width: 1300px;
 }
 
+.search {
+    padding-top: 69px;
+}
+
 .searchbar {
-    width: 100%;
+    width: 1349px;
     height: 97px;
     background-image: linear-gradient(rgb(70, 74, 90), rgb(101, 105, 119));
     font-size: 50px;
@@ -194,6 +202,7 @@ h3 {
 
 .watchlist {
     height: 57vh;
+    padding-top: 70px;
 }
 
 .watchlistVideos {
@@ -246,6 +255,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 70px;
 }
 
 .originalsNormal {
@@ -267,6 +277,10 @@ h3 {
     font-size: 20px;
     padding-left: 70px;
     font-weight: 550;
+}
+
+.movies {
+    padding-top: 70px;
 }
 
 .moviesText {
@@ -307,6 +321,10 @@ h3 {
     padding-inline: 15px;
     border-radius: 20px;
     font-size: 15px;
+}
+
+.series {
+    padding-top: 70px;
 }
 
 .seriesVideos {
